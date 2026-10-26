@@ -1,0 +1,46 @@
+[
+ [
+  "Does a speaker cleaner sound really work?",
+  "It can help when the problem is a few droplets of water or loose dust sitting in the speaker grille. A low tone makes the speaker diaphragm move a long way back and forth, which pushes air through the grille and nudges trapped water out. It cannot repair a torn or corroded speaker."
+ ],
+ [
+  "Why is 165 Hz used for water eject?",
+  "Around 150 to 170 Hz is low enough to create large diaphragm movement but still high enough for the small speakers in phones to reproduce loudly. That combination moves the most air, which is what pushes water out."
+ ],
+ [
+  "How loud should the volume be?",
+  "Turn the phone's media volume to around 70 to 100 percent and keep the in-page slider moderate at first. If the sound starts to rattle harshly or distort, lower it a little. Never hold the phone to your ear while the tone is playing."
+ ],
+ [
+  "How many times can I run the cleaning cycle?",
+  "Two or three runs with short breaks in between is plenty. If the speaker still sounds muffled after that, let the phone dry naturally for several hours before trying again."
+ ],
+ [
+  "Is it safe for AirPods or other earbuds?",
+  "Use extra care. Earbuds are not designed for long loud tones, and you must never wear them while the tone plays. Take them out, set the volume low to medium, and run only short sessions. Many earbud makers recommend simply drying them with a lint-free cloth and leaving them to air dry."
+ ],
+ [
+  "Why can't I hear anything on my iPhone?",
+  "Check that the ring/silent switch or Action button is not set to silent, raise the media volume, and make sure no Bluetooth headphones are connected. Then tap Start again; iOS only allows web audio to begin after a tap."
+ ],
+ [
+  "Do I need to install an app?",
+  "No. The tones are generated live in your browser with the Web Audio API. Nothing is downloaded, recorded or uploaded."
+ ],
+ [
+  "Should I put my wet phone in rice?",
+  "Rice is not recommended by major phone makers. It absorbs moisture slowly and can leave starch dust in ports. Leaving the phone in a dry place with good airflow works better."
+ ],
+ [
+  "Can I clean only the left or right speaker?",
+  "Yes. Choose Left, Right or Both in the speaker selector before or during a run. On phones with a single speaker, both channels are mixed into that one speaker, so the choice makes no difference there."
+ ],
+ [
+  "Does the vibration option help remove water?",
+  "On Android phones that support web vibration, the motor adds a gentle shake that can help droplets move toward the grille opening while the tone plays. iPhones do not let websites use the vibration motor, so on iOS the option is turned off and the tone works on its own."
+ ],
+ [
+  "How long should I wait before charging after water exposure?",
+  "Wait until the phone is completely dry and any liquid detection warning has cleared. For a light splash that may be under an hour; after a dunk, leaving it several hours in a dry, airy spot is safer. Charging a wet port can damage it."
+ ]
+]

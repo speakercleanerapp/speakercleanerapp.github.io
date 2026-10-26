@@ -1,0 +1,8 @@
+[
+["Why do I hear the left tone from both speakers?","Your phone probably has a single speaker, or Mono audio is enabled in accessibility settings. In both cases the two channels are mixed together."],
+["Why are the left and right sides swapped?","Many stereo phones swap channels when you rotate them so the sound matches the screen orientation. Try turning the phone the other way."],
+["I cannot hear the end of the frequency sweep. Is my speaker broken?","Probably not. Many adults cannot hear above about 14 to 15 kHz, and some phone speakers roll off at the highest pitches."],
+["Why is the start of the sweep so quiet?","Small phone speakers cannot reproduce deep bass around 50 to 80 Hz with much volume. The sound should become clear above about 150 Hz."],
+["Is the speaker test safe for headphones?","At low volume, yes. Turn the volume down before starting, because a pure tone can sound louder than music. Never use cleaning modes while wearing headphones."],
+["Can I test only one speaker?","Yes. Choose Left or Right in the speaker selector before running the frequency sweep. The channel test always cycles through left, right and both."]
+]

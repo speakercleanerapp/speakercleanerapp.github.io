@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speaker Dust Cleaner – Tone to Remove Dust &amp; Lint from Phone Speaker</title>
+<meta name="description" content="Clean dust and lint from your phone speaker with a stepped 200–1500 Hz tone band, plus brushing tips and a monthly routine. Free online speaker dust cleaner.">
+<link rel="canonical" href="https://speakercleanerapp.github.io/dust-cleaner/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b5cab">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Speaker Cleaner">
+<meta property="og:title" content="Speaker Dust Cleaner – Tone to Remove Dust &amp; Lint from Phone Speaker">
+<meta property="og:description" content="Clean dust and lint from your phone speaker with a stepped 200–1500 Hz tone band, plus brushing tips and a monthly routine. Free online speaker dust cleaner.">
+<meta property="og:url" content="https://speakercleanerapp.github.io/dust-cleaner/">
+<meta property="og:image" content="https://speakercleanerapp.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{--bg:#f6f8fb;--card:#fff;--ink:#14202e;--mut:#4a5868;--pri:#0b5cab;--pri2:#084a8a;--ok:#0f7a4a;--line:#dbe3ec;--warn:#7a4f00;--warnbg:#fff6e0}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--pri)}.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+header.top{background:var(--card);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;flex-wrap:wrap;align-items:center;column-gap:16px;padding-top:8px;padding-bottom:4px}
+.brand{font-weight:700;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px;min-height:40px}
+.nav{display:flex;gap:4px;overflow-x:auto;margin:0 -6px;padding:0;list-style:none;scrollbar-width:none}
+.nav a{display:block;padding:8px 8px;white-space:nowrap;text-decoration:none;color:var(--mut);font-size:.92rem;border-radius:8px}
+.nav a[aria-current]{color:var(--pri);font-weight:700;background:#eef5fd}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:9}
+h1{font-size:1.55rem;line-height:1.25;margin:18px 0 6px}.lead{color:var(--mut);margin:0 0 14px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 2px 10px rgba(20,32,46,.05)}
+.notice{display:flex;gap:10px;align-items:flex-start;background:var(--warnbg);color:var(--warn);border-radius:10px;padding:8px 12px;font-size:.9rem;line-height:1.5;margin-bottom:12px}
+.notice svg{flex:0 0 20px;margin-top:2px}
+fieldset{border:0;margin:0 0 12px;padding:0;min-width:0}legend{font-weight:600;margin-bottom:6px;padding:0}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.modes label{display:flex;gap:8px;align-items:center;border:2px solid var(--line);border-radius:12px;padding:8px 10px;cursor:pointer;min-height:56px;line-height:1.3}
+.modes input,.opt input[type=checkbox]{accent-color:var(--pri);width:20px;height:20px;margin:0;flex:0 0 20px}
+.modes label:has(input:checked){border-color:var(--pri);background:#eef5fd}
+.modes small{display:block;color:var(--mut);font-size:.8rem}
+#sc-main{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:62px;font:inherit;font-size:1.2rem;font-weight:700;color:#fff;background:var(--pri);border:0;border-radius:14px;cursor:pointer;touch-action:manipulation}
+#sc-main:hover{background:var(--pri2)}#sc-main:focus-visible,.seg input:focus-visible+span{outline:3px solid #f2a900;outline-offset:3px}
+#sc-main.on{background:#b3261e}#sc-main .i-stop{display:none}#sc-main.on .i-stop{display:block}#sc-main.on .i-play{display:none}
+.meter{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:12px 0 6px;font-size:.95rem}
+.meter b{font-variant-numeric:tabular-nums;font-size:1.2rem}#sc-hz{font-variant-numeric:tabular-nums;color:var(--mut);margin-left:auto;margin-right:10px}
+.track{height:10px;background:#e6ecf3;border-radius:6px;overflow:hidden}#sc-bar{height:100%;width:0;background:var(--ok);transition:width .2s linear}
+#sc-status{min-height:1.6em;margin:8px 0 0;font-size:.93rem;color:var(--mut)}
+.opts{border-top:1px solid var(--line);margin-top:12px;padding-top:12px;display:grid;gap:12px}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--line);border-radius:12px;overflow:hidden}
+.seg label{position:relative;cursor:pointer}.seg input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.seg span{display:block;text-align:center;padding:9px 4px;font-weight:600;font-size:.95rem}
+.seg label+label span{border-left:1px solid var(--line)}.seg input:checked+span{background:var(--pri);color:#fff}
+.dim{opacity:.55}.opt{display:flex;gap:10px;align-items:center;font-weight:600}
+#sc-vib-note{font-size:.85rem;color:var(--mut);margin:-6px 0 0}
+.vol{display:flex;align-items:center;gap:10px;font-size:.95rem}.vol input{flex:1;accent-color:var(--pri);min-height:32px}
+.wave{display:flex;gap:4px;height:18px;align-items:flex-end;justify-content:center;margin-top:8px}
+.wave i{width:5px;height:4px;background:var(--pri);border-radius:3px}.playing .wave i{animation:w .8s ease-in-out infinite}
+.wave i:nth-child(2){animation-delay:.1s}.wave i:nth-child(3){animation-delay:.2s}.wave i:nth-child(4){animation-delay:.3s}.wave i:nth-child(5){animation-delay:.4s}
+@keyframes w{50%{height:18px}}@media (prefers-reduced-motion:reduce){.playing .wave i{animation:none;height:10px}html{scroll-behavior:auto}}
+main h2{font-size:1.32rem;margin:34px 0 8px;line-height:1.3}main h3{font-size:1.07rem;margin:20px 0 4px}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-top:26px}.toc ol{margin:6px 0 0;padding-left:20px}
+table{border-collapse:collapse;width:100%;font-size:.93rem;background:var(--card)}th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}summary{font-weight:600;cursor:pointer}
+.cards{display:grid;gap:10px;list-style:none;padding:0}.cards a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink)}
+.cards strong{color:var(--pri)}.cards span{display:block;color:var(--mut);font-size:.92rem}
+.cta{display:inline-block;background:var(--pri);color:#fff;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700}
+footer{margin:40px 0 0;padding:20px 0 30px;border-top:1px solid var(--line);color:var(--mut);font-size:.9rem}
+footer ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 10px}footer a{display:inline-block;padding:4px 0}
+@media (min-width:620px){h1{font-size:1.95rem}.cards{grid-template-columns:1fr 1fr}}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Speaker Dust Cleaner","url":"https://speakercleanerapp.github.io/dust-cleaner/","description":"Clean dust and lint from your phone speaker with a stepped 200–1500 Hz tone band, plus brushing tips and a monthly routine. Free online speaker dust cleaner.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (iOS, Android, Windows, macOS) with a modern web browser","browserRequirements":"Requires a browser with Web Audio API support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does the dust cleaner go up to 1500 Hz?","acceptedAnswer":{"@type":"Answer","text":"Higher frequencies make the grille mesh vibrate quickly with small movements, which suits very fine dust. Lower steps handle heavier particles. Covering 200 to 1500 Hz shakes a wider mix of debris than one fixed tone."}},{"@type":"Question","name":"The high steps sound loud. Should I turn it down?","acceptedAnswer":{"@type":"Answer","text":"Yes, lower the tone level slider until it is comfortable. Small speakers play mid and high frequencies efficiently, so you do not need full volume for the mesh to vibrate."}},{"@type":"Question","name":"Can I use a toothpick or pin to clean the grille?","acceptedAnswer":{"@type":"Answer","text":"It is better not to. Sharp objects can puncture the mesh or the waterproof membrane underneath. Use a soft brush or low-tack tape instead."}},{"@type":"Question","name":"Should I use compressed air?","acceptedAnswer":{"@type":"Answer","text":"Only with care, if at all. A strong blast aimed straight into the grille can push debris deeper or damage the membrane. A soft brush plus the dust tone is safer."}},{"@type":"Question","name":"How often should I run the dust cleaner?","acceptedAnswer":{"@type":"Answer","text":"Once a month is a sensible routine for phones carried in pockets. Run it whenever the speaker starts to sound dull without any water exposure."}},{"@type":"Question","name":"Will this also clean my microphone?","acceptedAnswer":{"@type":"Answer","text":"No. Tones come out of the speaker and do not affect the microphone holes. Clean those gently with a dry soft brush."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Speaker Cleaner","item":"https://speakercleanerapp.github.io/"},{"@type":"ListItem","position":2,"name":"Speaker Dust Cleaner","item":"https://speakercleanerapp.github.io/dust-cleaner/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0b5cab"/><path d="M7 13h4l6-5v16l-6-5H7z" fill="#fff"/><path d="M21 12c1.5 1.2 1.5 6.8 0 8M24 9.5c3 2.5 3 10.5 0 13" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Speaker Cleaner</a>
+<nav aria-label="Tools"><ul class="nav"><li><a href="/water-eject/">Water eject</a></li><li><a href="/dust-cleaner/" aria-current="page">Dust cleaner</a></li><li><a href="/vibration-cleaner/">Vibration</a></li><li><a href="/speaker-test/">Speaker test</a></li></ul></nav>
+</div></header>
+<main id="content" class="wrap">
+<h1>Speaker Dust Cleaner: 200–1500 Hz Tone for Dust &amp; Lint</h1>
+<p class="lead">Brush the grille gently first, then tap Start to shake out remaining dust with stepped tones.</p>
+<section class="tool" aria-labelledby="tool-h">
+<h2 id="tool-h" class="vh">Speaker cleaning tool</h2>
+<div class="notice" role="note"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h4l5 4V6L7 10H3z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+<span><strong>Volume check:</strong> media volume 70–100%, silent mode off, Bluetooth off. Keep the phone away from your ear.</span></div>
+<fieldset><legend>Mode</legend><div class="modes"><label><input type="radio" name="sc-mode" value="dust" checked><span>Dust cleaner<small>200–1500 Hz steps, 56 s</small></span></label><label><input type="radio" name="sc-mode" value="sweep"><span>Sweep &amp; pulse<small>60–320 Hz + bursts, 35 s</small></span></label><label><input type="radio" name="sc-mode" value="water"><span>Water eject<small>Steady 165 Hz, 30 s</small></span></label></div></fieldset>
+<button id="sc-main" type="button" aria-pressed="false" aria-describedby="sc-status">
+<svg class="i-play" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-stop" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg>
+<span class="lbl">Start</span></button>
+<div class="meter"><span id="sc-stage">&nbsp;</span><span id="sc-hz" aria-hidden="true">–</span><b id="sc-time" aria-label="Time remaining">0:00</b></div>
+<div class="track" role="presentation"><div id="sc-bar"></div></div>
+<div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+<p id="sc-status" role="status" aria-live="polite">Ready. Tap Start.</p>
+<div class="opts">
+<fieldset id="sc-ch-wrap" style="margin:0"><legend>Speaker</legend><div class="seg">
+<label><input type="radio" name="sc-ch" value="left"><span>Left</span></label>
+<label><input type="radio" name="sc-ch" value="both" checked><span>Both</span></label>
+<label><input type="radio" name="sc-ch" value="right"><span>Right</span></label></div></fieldset>
+<label class="opt"><input type="checkbox" id="sc-vib" aria-describedby="sc-vib-note">Vibrate with tone</label>
+<p id="sc-vib-note">Uses your phone's vibration motor where the browser allows it (Android). Not available on iPhone.</p>
+<div class="vol"><label for="sc-vol">Tone level</label><input id="sc-vol" type="range" min="10" max="100" value="80" step="5"><output id="sc-vol-out" for="sc-vol">80%</output></div>
+</div></section>
+<nav class="toc" aria-label="Table of contents"><strong>On this page</strong><ol><li><a href="#why">Why dust needs a different tone</a></li><li><a href="#band">What each part of the 200–1500 Hz band does</a></li><li><a href="#steps">How to clean dust from a phone speaker</a></li><li><a href="#sources">Where speaker dust comes from</a></li><li><a href="#limits">When dust cleaning will not be enough</a></li><li><a href="#routine">A simple maintenance routine</a></li><li><a href="#more">More speaker tools</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+<h2 id="why">Why dust needs a different tone</h2>
+<p>Water and dust block a speaker in different ways. Water forms a film that a strong low note can burst. Dust and lint are made of many separate particles caught at different depths in the grille mesh, and each particle responds best to a slightly different kind of shaking. Very fine dust rattles most at higher pitches, while heavier specks and fibres respond to lower notes with bigger movement. A single 165 Hz tone helps, but it leaves some particles barely moving.</p>
+<p>The dust cleaner on this page therefore plays a <strong>stepped tone band from 200 Hz up to 1500 Hz</strong>. It climbs through ten fixed steps, holding each for a little over two seconds, then descends back down through the same steps, and finishes with a short low flush at 165 Hz. Stepping, rather than gliding smoothly, creates a small jolt each time the pitch changes. Those jolts work like tapping a sieve: particles that are wedged against the mesh at one frequency are knocked loose when the next step arrives.</p>
+
+<h2 id="band">What each part of the 200–1500 Hz band does</h2>
+<table>
+<thead><tr><th scope="col">Range</th><th scope="col">Effect on the grille</th></tr></thead>
+<tbody>
+<tr><td>200–400 Hz</td><td>Large diaphragm movement, good for heavier specks, crumbs and loose fibres sitting on the surface.</td></tr>
+<tr><td>500–800 Hz</td><td>The speaker plays these loudly and efficiently, giving strong vibration of the mesh itself.</td></tr>
+<tr><td>1000–1500 Hz</td><td>Faster, smaller movements that shake very fine powder and pocket dust out of the tiny mesh holes.</td></tr>
+<tr><td>Final 165 Hz flush</td><td>A short burst of strong air movement that pushes out whatever was loosened.</td></tr>
+</tbody>
+</table>
+<p>The higher steps can sound piercing in a quiet room. That is normal. Use the tone level slider to keep it comfortable; even a moderate level is enough to vibrate the mesh, because higher frequencies are reproduced efficiently by small speakers.</p>
+
+<h2 id="steps">How to clean dust from a phone speaker</h2>
+<ol>
+<li><strong>Look first.</strong> Use a torch to check the grille. If you can see a grey layer or fibres, deal with those mechanically before using sound.</li>
+<li><strong>Brush gently.</strong> Use a soft, dry, clean brush such as a new soft toothbrush or a small paintbrush. Brush across the holes at a shallow angle, not straight into them.</li>
+<li><strong>Lift, don't press.</strong> A small piece of low-tack tape or modelling putty dabbed lightly on the surface can lift lint. Do not press hard or leave residue behind.</li>
+<li><strong>Set the volume.</strong> Media volume 60–90 percent is plenty for this mode. Remove the case.</li>
+<li><strong>Run the dust cleaner.</strong> Tap Start with the grille facing down. The full routine takes just under a minute.</li>
+<li><strong>Brush again.</strong> Loosened dust often collects at the edge of the grille. Give it a final light brush.</li>
+<li><strong>Check the sound.</strong> Play speech or music at medium volume and listen for restored clarity in high notes.</li>
+</ol>
+
+<h2 id="sources">Where speaker dust comes from</h2>
+<h3>Pockets and bags</h3>
+<p>Cotton pockets shed fibres every time the phone slides in and out. Over a few months these build a soft felt over the bottom grille and charging port. Phones carried in jeans pockets tend to collect the most.</p>
+<h3>Workshops, building sites and cars</h3>
+<p>Fine mineral dust from sanding, plaster or dirt roads is much smaller than lint and can work its way into the mesh holes. The higher steps of the dust band are particularly useful here.</p>
+<h3>Makeup and skin oils</h3>
+<p>Powders and oils from skin can combine into a sticky layer on the earpiece. Sound helps loosen it, but a gentle wipe with a dry microfibre cloth is usually needed as well.</p>
+
+<h2 id="limits">When dust cleaning will not be enough</h2>
+<p>If the grille is completely clogged with compacted lint, sound can only shake the surface. In that case careful brushing does most of the work and the tone finishes the job. If the speaker still sounds distorted after cleaning, or if you see damage to the mesh, the speaker itself may be worn or torn. Very old phones can also suffer from a degraded internal dust membrane. A repair shop can replace the speaker module on most phones for a modest price.</p>
+
+<h2 id="routine">A simple maintenance routine</h2>
+<p>Running the dust cleaner once a month, together with a quick brush, keeps lint from building up in the first place. Pair it with a check of the charging port, which collects the same fibres and can stop a cable from seating properly. A clean grille also helps the water eject mode work better the next time the phone gets wet, because water has fewer fibres to cling to.</p>
+
+<h2 id="more">More speaker tools</h2><ul class="cards"><li><a href="/"><strong>Speaker cleaner</strong><span>All cleaning modes in one place, including the auto clean cycle.</span></a></li><li><a href="/water-eject/"><strong>Water eject</strong><span>A steady 165 Hz tone that pushes water out of a wet speaker grille.</span></a></li><li><a href="/vibration-cleaner/"><strong>Vibration cleaner</strong><span>Low pulses combined with your phone's vibration motor where supported.</span></a></li><li><a href="/speaker-test/"><strong>Speaker test</strong><span>Check left and right channels and run a 50 Hz to 16 kHz sweep.</span></a></li></ul>
+<h2 id="faq">Frequently asked questions</h2>
+<details><summary>Why does the dust cleaner go up to 1500 Hz?</summary><p>Higher frequencies make the grille mesh vibrate quickly with small movements, which suits very fine dust. Lower steps handle heavier particles. Covering 200 to 1500 Hz shakes a wider mix of debris than one fixed tone.</p></details>
+<details><summary>The high steps sound loud. Should I turn it down?</summary><p>Yes, lower the tone level slider until it is comfortable. Small speakers play mid and high frequencies efficiently, so you do not need full volume for the mesh to vibrate.</p></details>
+<details><summary>Can I use a toothpick or pin to clean the grille?</summary><p>It is better not to. Sharp objects can puncture the mesh or the waterproof membrane underneath. Use a soft brush or low-tack tape instead.</p></details>
+<details><summary>Should I use compressed air?</summary><p>Only with care, if at all. A strong blast aimed straight into the grille can push debris deeper or damage the membrane. A soft brush plus the dust tone is safer.</p></details>
+<details><summary>How often should I run the dust cleaner?</summary><p>Once a month is a sensible routine for phones carried in pockets. Run it whenever the speaker starts to sound dull without any water exposure.</p></details>
+<details><summary>Will this also clean my microphone?</summary><p>No. Tones come out of the speaker and do not affect the microphone holes. Clean those gently with a dry soft brush.</p></details>
+</main>
+<footer><div class="wrap">
+<ul><li><a href="/">Speaker cleaner</a></li><li><a href="/water-eject/">Water eject</a></li><li><a href="/dust-cleaner/">Dust cleaner</a></li><li><a href="/vibration-cleaner/">Vibration</a></li><li><a href="/speaker-test/">Speaker test</a></li><li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy.html">Privacy</a></li></ul>
+<p>Speaker Cleaner is a free, open-source tool. Tones are generated locally in your browser and no personal data is collected. It cannot fix hardware damage; for long liquid exposure, consult the manufacturer or a qualified repair service.</p>
+</div></footer>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
