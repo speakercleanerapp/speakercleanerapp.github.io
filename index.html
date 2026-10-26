@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speaker Cleaner – Free Sound to Clean Phone Speaker &amp; Eject Water</title>
+<meta name="description" content="Free online speaker cleaner. Play a 165 Hz water eject tone, a low-frequency sweep, or a 80-second auto clean cycle to clear water and dust from your phone speaker. No app, no sign-up.">
+<link rel="canonical" href="https://speakercleanerapp.github.io/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b5cab">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Speaker Cleaner">
+<meta property="og:title" content="Speaker Cleaner – Free Sound to Clean Phone Speaker &amp; Eject Water">
+<meta property="og:description" content="Play a 165 Hz water eject tone or a full auto clean cycle in your browser to push water and dust out of your phone speaker.">
+<meta property="og:url" content="https://speakercleanerapp.github.io/">
+<meta property="og:image" content="https://speakercleanerapp.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--ink:#14202e;--mut:#4a5868;--pri:#0b5cab;--pri2:#084a8a;--ok:#0f7a4a;--line:#dbe3ec;--warn:#8a5a00;--warnbg:#fff6e0}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--pri)}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header.top{background:var(--card);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:10px;height:56px}
+.brand{font-weight:700;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:8px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:9}
+h1{font-size:1.7rem;line-height:1.25;margin:22px 0 6px}
+.lead{color:var(--mut);margin:0 0 16px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 2px 10px rgba(20,32,46,.05)}
+.notice{display:flex;gap:10px;align-items:flex-start;background:var(--warnbg);color:var(--warn);border-radius:10px;padding:10px 12px;font-size:.93rem;margin-bottom:14px}
+.notice svg{flex:0 0 22px;margin-top:2px}
+fieldset{border:0;margin:0 0 14px;padding:0}
+legend{font-weight:600;margin-bottom:8px}
+.modes{display:grid;grid-template-columns:1fr;gap:8px}
+.modes label{display:flex;gap:10px;align-items:center;border:2px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer;min-height:48px}
+.modes input{accent-color:var(--pri);width:20px;height:20px;margin:0}
+.modes label:has(input:checked){border-color:var(--pri);background:#eef5fd}
+.modes small{display:block;color:var(--mut);font-size:.85rem;line-height:1.35}
+.modes input:disabled+span{opacity:.6}
+#sc-main{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:64px;font:inherit;font-size:1.2rem;font-weight:700;color:#fff;background:var(--pri);border:0;border-radius:14px;cursor:pointer;touch-action:manipulation}
+#sc-main:hover{background:var(--pri2)}
+#sc-main:focus-visible{outline:3px solid #f2a900;outline-offset:3px}
+#sc-main.on{background:#b3261e}
+#sc-main .i-stop{display:none}#sc-main.on .i-stop{display:block}#sc-main.on .i-play{display:none}
+.meter{display:flex;justify-content:space-between;align-items:baseline;margin:14px 0 6px;font-size:.95rem}
+#sc-time{font-variant-numeric:tabular-nums;font-weight:700;font-size:1.25rem}
+.track{height:10px;background:#e6ecf3;border-radius:6px;overflow:hidden}
+#sc-bar{height:100%;width:0;background:var(--ok);transition:width .2s linear}
+#sc-status{min-height:1.6em;margin:10px 0 0;font-size:.95rem;color:var(--mut)}
+.vol{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:.95rem}
+.vol input{flex:1;accent-color:var(--pri);min-height:32px}
+.wave{display:flex;gap:4px;height:22px;align-items:flex-end;justify-content:center;margin-top:10px}
+.wave i{width:5px;height:4px;background:var(--pri);border-radius:3px}
+.playing .wave i{animation:w .8s ease-in-out infinite}
+.wave i:nth-child(2){animation-delay:.1s}.wave i:nth-child(3){animation-delay:.2s}.wave i:nth-child(4){animation-delay:.3s}.wave i:nth-child(5){animation-delay:.4s}
+@keyframes w{50%{height:22px}}
+@media (prefers-reduced-motion:reduce){.playing .wave i{animation:none;height:12px}html{scroll-behavior:auto}}
+main h2{font-size:1.35rem;margin:36px 0 8px;line-height:1.3}
+main h3{font-size:1.08rem;margin:22px 0 4px}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-top:28px}
+.toc ol{margin:6px 0 0;padding-left:20px}
+table{border-collapse:collapse;width:100%;font-size:.95rem;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}
+summary{font-weight:600;cursor:pointer}
+footer{margin:40px 0 0;padding:20px 0 30px;border-top:1px solid var(--line);color:var(--mut);font-size:.9rem}
+@media (min-width:620px){.modes{grid-template-columns:repeat(3,1fr)}h1{font-size:2rem}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Speaker Cleaner","url":"https://speakercleanerapp.github.io/","description":"Free browser-based speaker cleaner that plays a 165 Hz water eject tone, low-frequency sweeps and an auto clean cycle to help remove water and dust from phone speakers.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (iOS, Android, Windows, macOS) with a modern web browser","browserRequirements":"Requires a browser with Web Audio API support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Does a speaker cleaner sound really work?","acceptedAnswer":{"@type":"Answer","text":"It can help when the problem is a few droplets of water or loose dust sitting in the speaker grille. A low tone makes the speaker diaphragm move a long way back and forth, which pushes air through the grille and nudges trapped water out. It cannot repair a torn or corroded speaker."}},
+{"@type":"Question","name":"Why is 165 Hz used for water eject?","acceptedAnswer":{"@type":"Answer","text":"Around 150 to 170 Hz is low enough to create large diaphragm movement but still high enough for the small speakers in phones to reproduce loudly. That combination moves the most air, which is what pushes water out."}},
+{"@type":"Question","name":"How loud should the volume be?","acceptedAnswer":{"@type":"Answer","text":"Turn the phone's media volume to around 70 to 100 percent and keep the in-page slider moderate at first. If the sound starts to rattle harshly or distort, lower it a little. Never hold the phone to your ear while the tone is playing."}},
+{"@type":"Question","name":"How many times can I run the cleaning cycle?","acceptedAnswer":{"@type":"Answer","text":"Two or three runs with short breaks in between is plenty. If the speaker still sounds muffled after that, let the phone dry naturally for several hours before trying again."}},
+{"@type":"Question","name":"Is it safe for AirPods or other earbuds?","acceptedAnswer":{"@type":"Answer","text":"Use extra care. Earbuds are not designed for long loud tones, and you must never wear them while the tone plays. Take them out, set the volume low to medium, and run only short sessions. Many earbud makers recommend simply drying them with a lint-free cloth and leaving them to air dry."}},
+{"@type":"Question","name":"Why can't I hear anything on my iPhone?","acceptedAnswer":{"@type":"Answer","text":"Check that the ring/silent switch or Action button is not set to silent, raise the media volume, and make sure no Bluetooth headphones are connected. Then tap Start again; iOS only allows web audio to begin after a tap."}},
+{"@type":"Question","name":"Do I need to install an app?","acceptedAnswer":{"@type":"Answer","text":"No. The tones are generated live in your browser with the Web Audio API. Nothing is downloaded, recorded or uploaded."}},
+{"@type":"Question","name":"Should I put my wet phone in rice?","acceptedAnswer":{"@type":"Answer","text":"Rice is not recommended by major phone makers. It absorbs moisture slowly and can leave starch dust in ports. Leaving the phone in a dry place with good airflow works better."}}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="/"><svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0b5cab"/><path d="M7 13h4l6-5v16l-6-5H7z" fill="#fff"/><path d="M21 12c1.5 1.2 1.5 6.8 0 8M24 9.5c3 2.5 3 10.5 0 13" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Speaker Cleaner</a>
+</div></header>
+
+<main id="content" class="wrap">
+<h1>Speaker Cleaner: Free Sound to Eject Water &amp; Clean Your Phone Speaker</h1>
+<p class="lead">Pick a mode, turn your volume up, point the speaker down and tap Start. Everything runs in your browser.</p>
+
+<section class="tool" aria-labelledby="tool-h">
+<h2 id="tool-h" style="position:absolute;left:-999px">Speaker cleaning tool</h2>
+<div class="notice" role="note">
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h4l5 4V6L7 10H3z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+<span><strong>Volume check:</strong> set your phone's media volume high (70–100%), switch off silent mode, disconnect Bluetooth, and keep the phone away from your ear.</span>
+</div>
+
+<fieldset>
+<legend>Cleaning mode</legend>
+<div class="modes">
+<label><input type="radio" name="sc-mode" value="water" checked><span>Water eject<small>Steady 165 Hz tone, 30 s</small></span></label>
+<label><input type="radio" name="sc-mode" value="sweep"><span>Sweep &amp; pulse<small>60–320 Hz sweep then bursts, 35 s</small></span></label>
+<label><input type="radio" name="sc-mode" value="auto"><span>Auto clean cycle<small>5 stages, 80 s</small></span></label>
+</div>
+</fieldset>
+
+<button id="sc-main" type="button" aria-pressed="false" aria-describedby="sc-status">
+<svg class="i-play" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-stop" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg>
+<span class="lbl">Start cleaning</span>
+</button>
+
+<div class="meter"><span id="sc-stage">Water eject (165 Hz)</span><span id="sc-time" aria-label="Time remaining">0:30</span></div>
+<div class="track" role="presentation"><div id="sc-bar"></div></div>
+<div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+<p id="sc-status" role="status" aria-live="polite">Ready. Tap Start cleaning.</p>
+
+<div class="vol">
+<label for="sc-vol">Tone level</label>
+<input id="sc-vol" type="range" min="10" max="100" value="80" step="5">
+<output id="sc-vol-out" for="sc-vol">80%</output>
+</div>
+</section>
+
+<nav class="toc" aria-label="Table of contents">
+<strong>On this page</strong>
+<ol>
+<li><a href="#how">How the speaker cleaner works</a></li>
+<li><a href="#modes">Which mode to choose</a></li>
+<li><a href="#iphone">Clean an iPhone speaker</a></li>
+<li><a href="#android">Clean an Android speaker</a></li>
+<li><a href="#earbuds">Earbuds and headphones: be careful</a></li>
+<li><a href="#limits">When sound will not fix it</a></li>
+<li><a href="#safety">Safety tips</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ol>
+</nav>
+
+<h2 id="how">How the speaker cleaner works</h2>
+<p>A phone speaker is a tiny diaphragm attached to a coil that sits in a magnetic field. When an audio signal reaches the coil, the diaphragm moves in and out and pushes the air in front of it, which you hear as sound. Directly in front of the diaphragm is a mesh grille, and that mesh is exactly where water and fine dust like to sit. A single drop stretched across the mesh is enough to make music sound muffled, buzzy or quieter than usual.</p>
+<p>Low frequencies make the diaphragm travel much further than high ones at the same loudness. When this page plays a low tone, the diaphragm acts like a small air pump. Each push forces air through the grille, and the repeated pressure changes break the surface tension holding a droplet in place, so the water is shaken loose and pushed out of the opening. Loose dust and lint near the surface of the mesh can be dislodged the same way.</p>
+<p>The tones are created on the fly using the Web Audio API that is built into every modern browser. No audio file is downloaded and the microphone is never used. Because the tone is generated as a pure sine wave, it is clean and predictable, with smooth fades at the start and end to avoid pops that could stress the speaker.</p>
+
+<h2 id="modes">Which mode to choose</h2>
+<table>
+<thead><tr><th scope="col">Mode</th><th scope="col">What it plays</th><th scope="col">Best for</th></tr></thead>
+<tbody>
+<tr><td>Water eject</td><td>A steady 165 Hz tone for 30 seconds</td><td>A phone that just got splashed or came out of the pool and sounds muffled</td></tr>
+<tr><td>Sweep &amp; pulse</td><td>A tone gliding between 60 and 320 Hz, then rhythmic bursts at 150 Hz</td><td>Stubborn droplets, light dust, or a speaker that buzzes only on certain notes</td></tr>
+<tr><td>Auto clean cycle</td><td>Five stages over about 80 seconds: warm-up sweep, 165 Hz, pulses, deep rumble, final 165 Hz</td><td>A thorough one-tap routine when you are not sure what the problem is</td></tr>
+</tbody>
+</table>
+<p>The sweep works because every speaker and grille combination has a slightly different resonance. Gliding through a range of frequencies makes sure the speaker hits the point where it moves the most air for your particular phone. The pulse stage adds sudden starts and stops, which are good at jolting a droplet that a steady tone only wobbles.</p>
+
+<h2 id="iphone">How to clean an iPhone speaker</h2>
+<ol>
+<li>Dry the outside of the phone with a soft, lint-free cloth. Remove any case so the bottom speaker holes are not covered.</li>
+<li>Make sure silent mode is off (the ring/silent switch or Action button), and disconnect AirPods or any Bluetooth speaker in Control Center.</li>
+<li>Turn the media volume up with the side buttons while audio is not playing, or after you tap Start.</li>
+<li>Choose <strong>Water eject</strong> or <strong>Auto clean cycle</strong> and tap Start. Safari only allows sound to begin after a tap, so if nothing plays, tap Stop and Start once more.</li>
+<li>Hold the phone with the bottom edge facing down so gravity helps. For the earpiece speaker at the top, turn the phone upside down and run the cycle again.</li>
+<li>When it finishes, wipe away any droplets that appeared around the grille, then play some music to check the sound.</li>
+</ol>
+
+<h2 id="android">How to clean an Android phone speaker</h2>
+<ol>
+<li>Wipe the phone dry and take off the case. Many Android phones have one speaker on the bottom edge and a second in the earpiece.</li>
+<li>Open this page in Chrome, Samsung Internet, Firefox or any modern browser.</li>
+<li>Raise the <em>media</em> volume, not the ringtone volume. On most phones you press a volume key, then expand the slider panel to see media.</li>
+<li>Pick a mode and tap Start. Point the bottom speaker downward during the first run.</li>
+<li>Run a second pass with the phone flipped to target the earpiece speaker if it also sounds muffled.</li>
+<li>Some phones show a moisture warning on the charging port. Do not charge until that warning clears, even if the speaker sounds fine again.</li>
+</ol>
+
+<h2 id="earbuds">Earbuds and headphones: be careful</h2>
+<p>Earbuds, including AirPods and other wireless buds, have much smaller drivers than a phone speaker and are designed to sit at very low volume right inside your ear. If you want to try the tool on them, take them out of your ears first, put them on a table with the speaker mesh facing down, start at a low to medium level, and run only the 30-second water eject mode. Stop immediately if you hear crackling. Never wear headphones while any cleaning tone is playing, because a loud continuous low tone can be uncomfortable and harmful to hearing. For most earbuds, gentle drying with a cloth and a few hours of air drying with the case open is the safest approach.</p>
+
+<h2 id="limits">When a speaker cleaner sound will not help</h2>
+<p>Sound can only move what is loose. It is worth being realistic about what it cannot do:</p>
+<ul>
+<li><strong>Physical damage.</strong> A speaker that crackles at every volume, cuts out, or makes no sound at all after a drop may have a torn diaphragm or a broken connection. No tone can repair that.</li>
+<li><strong>Corrosion.</strong> Salt water, sugary drinks and chlorinated water can leave residue that dries on the coil and contacts. Over days this can corrode metal parts. Rinse residue promptly according to your phone maker's guidance and seek repair if sound gets worse.</li>
+<li><strong>Packed debris.</strong> Pocket lint and dried grime pressed deep into the mesh usually need gentle mechanical cleaning with a soft, dry brush, held at an angle and never pushed inward.</li>
+<li><strong>Software issues.</strong> If sound is missing everywhere, restart the phone, check Bluetooth routing and accessibility audio settings, and update the system before assuming the speaker is blocked.</li>
+<li><strong>Water inside the body.</strong> If the phone was submerged for a long time, water may be inside the device, not just in the grille. Switch it off and let it dry; get it checked if it behaves oddly.</li>
+</ul>
+
+<h2 id="safety">Safety tips</h2>
+<ul>
+<li>Keep the phone at arm's length while the tone plays. Low tones can sound quieter than they really are.</li>
+<li>Do not push cotton buds, pins, or toothpicks into the speaker holes. They can puncture the mesh or the waterproof membrane behind it.</li>
+<li>Skip hair dryers, ovens and other heat sources. Heat can warp seals and damage the battery.</li>
+<li>Avoid compressed air aimed straight into the grille; strong blasts can push water deeper or damage the membrane.</li>
+<li>Do not charge a phone that still shows a liquid warning or that you suspect is wet inside.</li>
+<li>Take breaks between runs. Two or three cycles is enough; running tones for many minutes will not speed up drying.</li>
+<li>Remember that water resistance ratings wear down over time and do not cover warm water, soapy water or the sea.</li>
+</ul>
+
+<h2 id="faq">Frequently asked questions</h2>
+<details><summary>Does a speaker cleaner sound really work?</summary><p>It can help when the problem is a few droplets of water or loose dust sitting in the speaker grille. A low tone makes the speaker diaphragm move a long way back and forth, which pushes air through the grille and nudges trapped water out. It cannot repair a torn or corroded speaker.</p></details>
+<details><summary>Why is 165 Hz used for water eject?</summary><p>Around 150 to 170 Hz is low enough to create large diaphragm movement but still high enough for the small speakers in phones to reproduce loudly. That combination moves the most air, which is what pushes water out.</p></details>
+<details><summary>How loud should the volume be?</summary><p>Turn the phone's media volume to around 70 to 100 percent and keep the in-page slider moderate at first. If the sound starts to rattle harshly or distort, lower it a little. Never hold the phone to your ear while the tone is playing.</p></details>
+<details><summary>How many times can I run the cleaning cycle?</summary><p>Two or three runs with short breaks in between is plenty. If the speaker still sounds muffled after that, let the phone dry naturally for several hours before trying again.</p></details>
+<details><summary>Is it safe for AirPods or other earbuds?</summary><p>Use extra care. Earbuds are not designed for long loud tones, and you must never wear them while the tone plays. Take them out, set the volume low to medium, and run only short sessions. Many earbud makers recommend simply drying them with a lint-free cloth and leaving them to air dry.</p></details>
+<details><summary>Why can't I hear anything on my iPhone?</summary><p>Check that the ring/silent switch or Action button is not set to silent, raise the media volume, and make sure no Bluetooth headphones are connected. Then tap Start again; iOS only allows web audio to begin after a tap.</p></details>
+<details><summary>Do I need to install an app?</summary><p>No. The tones are generated live in your browser with the Web Audio API. Nothing is downloaded, recorded or uploaded.</p></details>
+<details><summary>Should I put my wet phone in rice?</summary><p>Rice is not recommended by major phone makers. It absorbs moisture slowly and can leave starch dust in ports. Leaving the phone in a dry place with good airflow works better.</p></details>
+</main>
+
+<footer><div class="wrap">
+<p>Speaker Cleaner is a free, open-source tool. It generates tones locally in your browser and collects no personal data. Read the <a href="/privacy.html">privacy note</a>.</p>
+<p>Use at your own risk. This tool cannot fix hardware damage; if your device was exposed to liquid for a long time, consult the manufacturer or a qualified repair service.</p>
+</div></footer>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>

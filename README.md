@@ -1,0 +1,45 @@
+# Speaker Cleaner
+
+A free, browser-based speaker cleaner that plays low-frequency tones to help push water droplets and loose dust out of phone speaker grilles.
+
+Live site: https://speakercleanerapp.github.io/
+
+## Features
+
+- **Water eject** – steady 165 Hz sine tone (30 s)
+- **Sweep & pulse** – 60–320 Hz sweep followed by rhythmic 150 Hz bursts (35 s)
+- **Auto clean cycle** – five stages over about 80 seconds
+- Start/stop with clear status, progress bar, and tone-level slider
+- Works on iOS Safari (audio starts on tap), Android, and desktop browsers
+- No frameworks, no tracking, no cookies, no build step
+
+## How it works
+
+Tones are synthesised in real time with the Web Audio API (`OscillatorNode` + `GainNode` automation). Nothing is downloaded or recorded.
+
+## Project structure
+
+```
+index.html      Tool + guide content (inline CSS, JSON-LD)
+assets/app.js   Tone generator and UI logic
+privacy.html    Privacy note
+404.html        Not-found page
+favicon.svg     Icon
+robots.txt, sitemap.xml
+```
+
+## Local development
+
+Open `index.html` directly, or serve the folder:
+
+```
+python3 -m http.server 8000
+```
+
+## Disclaimer
+
+Sound can only move loose water or debris. It cannot repair hardware damage. Keep devices away from your ears while tones play.
+
+## License
+
+MIT – see [LICENSE](LICENSE).
